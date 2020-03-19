@@ -91,4 +91,62 @@ print("Const B", constB)
 
 // We have all basic arithmetic operations as outlined in other languages
 
+// Decison making 
+
+let aconst = 10
+let bconst = 10
+let cconst = 10 
+
+if ( aconst < 4 && bconst < 4) && cconst < 4 {    // parenthesis plays an important role, PEMDAS 
+    print("Value of a is", aconst)
+}
+else if (aconst < 8 || bconst < 8)
+{
+    print(aconst)
+}
+else if (aconst <= 9)
+{
+    print("3rd if else", aconst)
+}
+else {
+    print("Doesn't match any of the else if blocks")
+}
+
+
+
+// Switch statements 
+
+var somecharec : String = "c"
+
+if somecharec == "a" {
+    print("CHaracter matched")
+}
+
+switch somecharec {
+    case "a":
+        print("matched")
+    case "b", "c":
+        print ("Its B or C - Using multiple condition in switch case")
+    default :
+        print("Didnt match - Switch default block")
+}
+
+//Rather than using many else if clauses, its better to use this 
+
+
+
+// Loops
+
+
+
+
+
+
+
+
+
+
+
+
+
 
