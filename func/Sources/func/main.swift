@@ -124,9 +124,9 @@ print(po.age)
 // similar to parameterised constructors 
 
 class dog{
-    var breed : String
-    var color : String
-    
+    var breed = ""
+    var color = ""
+
     init (){
 
     }
@@ -144,6 +144,28 @@ var dogobjone = dog(dogbreed: "Labrador", dogcolor: "Golden") // This calls the 
 print(dogobjone.color, dogobjone.breed)
 var dogobjtwo = dog() // This calls the first initializer 
 
+// Optionals 
 
-//var mystr = "kagen is the best 3769 "
-//print(mystr)
+
+
+class Blog {
+    var title: String?   // title datatype is string and It could be nil or it could actually contain the sting 
+    var body: String?   
+    var number: Int? 
+}
+
+let post = Blog()
+// Optional binding
+// post.title = "Hello"   ---- Uncomment this to excute the code inside the if loop 
+if let actualtitle = post.title{
+    print(actualtitle) // Doesn't print it because it doesn have any value 
+}
+post.title = "ford vs ferrari"  // Commenting these lines will result in an error - you cant unwrap an nil
+print(post.title!) // Forced unwrapping  - this is saying to xcode that "I know there is a value in here and i dont need to check it  so go ahead and print it"
+
+if post.title != nil{
+    print(post.title!)
+}
+if post.title == nil {
+    // Optional contains no value 
+}
