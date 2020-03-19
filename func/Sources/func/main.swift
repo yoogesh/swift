@@ -98,3 +98,52 @@ print(ride.drive())
 
 let newride = fastcar()
 print(newride.drive())
+
+
+// Initializers for classes 
+// Method 1 
+
+class person{
+    var age = 0
+    var name = ""
+    init (){     // () after class name when creatign the object calls this iniializer
+    // set up your object 
+    name = "Chris"
+    age = 23
+    }
+}
+
+var po = person()   // () after person by defualt calls the initializers 
+// po is an instance to the class person 
+// the above syntax creates it and aslo calls the init fucntion 
+//init function assigns the values to the variables 
+print(po.age)
+
+
+/// Method 2  - Initializing with parameters 
+// similar to parameterised constructors 
+
+class dog{
+    var breed : String
+    var color : String
+    
+    init (){
+
+    }
+    init (dogbreed name: String, dogcolor color:String) // you can have multiple initializers
+    {
+        breed = name
+        self.color = color  // Argument name is color and the variavle name is color 
+        // This is ambigious 
+        // Hence you will use self.varname = argument 
+        // self. refers to the class variable  
+    }
+}
+
+var dogobjone = dog(dogbreed: "Labrador", dogcolor: "Golden") // This calls the secidn initializer 
+print(dogobjone.color, dogobjone.breed)
+var dogobjtwo = dog() // This calls the first initializer 
+
+
+//var mystr = "kagen is the best 3769 "
+//print(mystr)
