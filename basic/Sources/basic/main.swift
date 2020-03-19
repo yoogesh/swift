@@ -137,11 +137,36 @@ switch somecharec {
 
 // Loops
 
+for i in 1...5 {   //This has a sequence 1 to 5
+    print("For", i)
+}
+
+for i in 1..<5 {   // Sequence goes only till 4
+    print("For", i)
+}
+var sum = 0
+for i in 1...3 {
+    sum += i}
+print("Sum is ", sum)
 
 
+// While 
+var awhile: Int
+var arepeat: Int
+awhile = 4
+arepeat = 4
+while awhile > 0{
+    print("While", awhile)
+    awhile -= 1    
+}
 
 
+// Repeat while loop
 
+repeat {
+    print("Repeat", arepeat)
+    arepeat -= 1
+} while arepeat > 0
 
 
 
