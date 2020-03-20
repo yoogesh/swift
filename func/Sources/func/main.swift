@@ -169,3 +169,47 @@ if post.title != nil{
 if post.title == nil {
     // Optional contains no value 
 }
+
+
+
+
+
+
+
+
+// Initializers part 2
+
+
+class Per{
+    var name = "Ram Yoogesh"
+}
+class Blogpost{
+    var title:String?
+    var author:Per
+    var newvaribale: Int // It will show an error if you are gonna let it as such 
+    // You need an initializer to initialize the class properties 
+
+    init (){
+        newvaribale = 10
+        author = Per()
+    }
+    convenience init (title: String){   // Called as the convenience initializer. It initiazles both the designated initializer and the value that we wanted to implement 
+        self.init()
+        self.title = title 
+    }
+}   
+
+let objo = Blogpost(title: "Monk who sold his ferrari")
+//objo.title = "Monk who sold his ferrari"
+
+// Method 1
+if let checkval = objo.title{
+    print(checkval)
+    print(objo.author)
+}
+
+// Method 2
+if objo.title != nil {
+    print(objo.newvaribale)   // DO some operation . it doesnt necessarily need to be this 
+}
+
