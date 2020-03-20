@@ -19,7 +19,7 @@ swift build
 .build/debug/foldername
 ```
 
-#### You use below hierarchy to access the code file 
+#### Use below hierarchy to access the code file 
 ```
 /foldername/Sources/main.swift
 ```
@@ -28,6 +28,7 @@ swift build
 #### Basic - Data types, variables, constants, optionals, switch, Loops
 #### Func - fucntions, classes, inheritance, Initializers
 #### structures - Arrays, Dicts 
+
 
 
 #### Reference 
